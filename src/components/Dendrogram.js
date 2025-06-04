@@ -7,47 +7,22 @@ const Dendrogram = ({dendrogramme}) => {
   const [treeData, setTreeData] = useState(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
-  // Gestion du redimensionnement de la fenêtre
- /* useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
-      setDimensions({
-        width: window.innerWidth * 0.95,
-        height: 700
-      });
+      if (containerRef.current) {
+        setDimensions({
+          width: containerRef.current.offsetWidth,
+          height: 700
+        });
+      }
     };
 
     setTreeData(dendrogramme);
 
-    handleResize(); // Initial call
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);*/
-
-  useEffect(() => {
-  const handleResize = () => {
-    if (containerRef.current) {
-      setDimensions({
-        width: containerRef.current.offsetWidth,
-        height: 700
-      });
-    }
-  };
-
-  setTreeData(dendrogramme);
-
-  handleResize();
-  window.addEventListener('resize', handleResize);
-  return () => window.removeEventListener('resize', handleResize);
-}, []);
-
-/*   useEffect(() => {
-    fetch("http://localhost:8080/api/classification/dendrogramme-monde-mer")
-      .then(response => response.json())
-      .then(data => {
-        setTreeData(data.dendrogramme);
-      })
-      .catch(error => console.error("Erreur lors du fetch:", error));
-  }, []); */
+  }, []);
 
   useEffect(() => {
     if (!treeData || dimensions.width === 0) return;
@@ -65,7 +40,6 @@ const Dendrogram = ({dendrogramme}) => {
     svg.selectAll("*").remove(); // clear previous content
     
     // Mise à jour des dimensions du SVG
-    // svg.attr("width", width).attr("height", height);
     svg
       .attr("viewBox", `0 0 ${width} ${height}`)
       .attr("preserveAspectRatio", "xMidYMid meet");
@@ -121,29 +95,6 @@ const Dendrogram = ({dendrogramme}) => {
       .text(d => d.data.name);
 
   }, [treeData, dimensions]);
-
-  /*  return (
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      minHeight: '100vh',
-      backgroundColor: '#f8f9fa',
-      padding: '20px'
-    }}>
-      <svg 
-        ref={ref} 
-        style={{
-          border: '1px solid #ddd',
-          borderRadius: '8px',
-          backgroundColor: 'white',
-          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-          maxWidth: '100%',
-          height: 'auto'
-        }}
-      />
-    </div>
-  ); */
   return (
     <div ref={containerRef} style={{ 
       display: 'flex', 
