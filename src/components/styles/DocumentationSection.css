@@ -1,0 +1,510 @@
+/* Section Documentation */
+.documentation-section {
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.documentation-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.documentation-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title-icon {
+  font-size: 2.2rem;
+}
+
+.documentation-subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.documentation-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  min-height: 600px;
+}
+
+/* Navigation Documentation */
+.doc-navigation {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.doc-nav-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.doc-nav-button:hover {
+  background: #f1f5f9;
+  transform: translateX(4px);
+}
+
+.doc-nav-button.active {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.doc-nav-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.doc-nav-text {
+  font-weight: 500;
+}
+
+/* Contenu Documentation */
+.doc-content {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.doc-section {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+/* Cartes de concept */
+.concept-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.concept-card:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.concept-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.concept-card p {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Étapes du processus */
+.process-steps {
+  display: grid;
+  gap: 1rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.step-number {
+  background: #3b82f6;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Flow sémantique */
+.semantic-flow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flow-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flow-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.flow-item h5 {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.flow-arrow {
+  font-size: 1.5rem;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+/* Applications grid */
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.app-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-item span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Matrice de distance */
+.matrix-example {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.distance-table {
+  margin: 0 auto 2rem;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.distance-table th,
+.distance-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.distance-table th {
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.diagonal {
+  background: #fef3c7;
+  font-weight: 600;
+}
+
+.matrix-properties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.property {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.property-icon {
+  font-size: 1.5rem;
+}
+
+/* Formules */
+.formula-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.formula {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #8b5cf6;
+}
+
+.formula-title {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.formula-math {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.final-formula {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.formula-big {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', monospace;
+}
+
+.formula-explanation {
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Échelle d'interprétation */
+.interpretation-scale {
+  display: grid;
+  gap: 1rem;
+}
+
+.scale-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+}
+
+.scale-value {
+  font-weight: 600;
+  color: #1e293b;
+  min-width: 2rem;
+}
+
+.scale-desc {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.scale-bar {
+  height: 8px;
+  border-radius: 4px;
+  min-width: 100px;
+}
+
+/* Composantes TF-IDF */
+.tfidf-components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.component {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-top: 4px solid #3b82f6;
+}
+
+.component h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.formula-small {
+  background: #f1f5f9;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  color: #3b82f6;
+}
+
+/* Exemple pratique */
+.example-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px dashed #e2e8f0;
+}
+
+.example-scenario {
+  background: #fef3c7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.example-scenario h5 {
+  font-weight: 600;
+  color: #92400e;
+  margin-bottom: 0.5rem;
+}
+
+.example-calculation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.calc-step {
+  padding: 0.5rem 1rem;
+  background: #f1f5f9;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+}
+
+.calc-result {
+  padding: 1rem;
+  background: #dcfce7;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  color: #166534;
+  border: 2px solid #bbf7d0;
+}
+
+/* Listes d'avantages */
+.advantages-list {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.advantages-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 1rem;
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .documentation-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .doc-navigation {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .doc-nav-button {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .documentation-section {
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+  
+  .documentation-title {
+    font-size: 2rem;
+  }
+  
+  .doc-content {
+    padding: 1.5rem;
+  }
+  
+  .semantic-flow {
+    flex-direction: column;
+  }
+  
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+  
+  .tfidf-components {
+    grid-template-columns: 1fr;
+  }
+}

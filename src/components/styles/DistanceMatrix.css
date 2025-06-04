@@ -1,0 +1,20 @@
+.distance-matrix {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.distance-matrix table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.distance-matrix th,
+.distance-matrix td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.distance-matrix th {
+  background-color: #f0f0f0;
+}
